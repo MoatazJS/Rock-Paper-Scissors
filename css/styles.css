@@ -1,0 +1,11 @@
+:root {
+  --main-bg-color: #fff;
+  --text-color: black;
+  --accent-color: rgb(105, 105, 105);
+}
+
+::dark-mode {
+  --secondary-bg-color: #282c34;
+  --secondary-text-color: #ffffff;
+  --secondary-accent-color: #61dafb;
+}
