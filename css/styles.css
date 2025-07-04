@@ -1,14 +1,17 @@
 :root {
-  --main-bg-color: #fff;
+  --bg-color: #fff;
   --text-color: black;
-  --accent-color: rgb(105, 105, 105);
+  --accent-color: #61dafb;
+  --hover-color: #0d6efd;
 }
 
-::dark-mode {
-  --secondary-bg-color: #282c34;
-  --secondary-text-color: #ffffff;
-  --secondary-accent-color: #61dafb;
+body.dark-mode {
+  --bg-color: #282c34;
+  --text-color: #ffffff;
+  --accent-color: rgb(105, 105, 105);
+  --hover-color: #61dafb;
 }
+
 .navbar {
   background-color: var(--accent-color);
   color: var(--text-color);
@@ -21,4 +24,14 @@
 .themeSwitch img {
   width: 30px;
   cursor: pointer;
+}
+
+.btnStyle {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.btnStyle:hover {
+  background-color: var(--hover-color) !important;
+  color: #fff !important;
 }
