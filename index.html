@@ -11,19 +11,25 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
   </head>
   <body>
-    <nav>
+    <nav
+      class="d-flex justify-content-around align-items-center px-4 py-2 navbar"
+    >
       <div class="logo">
         <img src="logo.webp" alt="Rock paper scissors signs" />
       </div>
-      <div class="sign">
+      <div class="sign d-flex justify-content-between align-items-center gap-2">
         <div class="themeSwitch">
           <img src="#" alt="Theme switch icon" />
         </div>
         <div class="signBtns">
-          <button id="loginBtn">Login</button>
-          <button id="signupBtn">Signup</button>
+          <button class="btn px-4 py-1 border" id="loginBtn">Login</button>
+          <button class="btn px-4 py-1 border" id="signupBtn">Signup</button>
         </div>
       </div>
     </nav>

@@ -9,3 +9,16 @@
   --secondary-text-color: #ffffff;
   --secondary-accent-color: #61dafb;
 }
+.navbar {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.logo img {
+  height: 150px;
+}
+
+.themeSwitch img {
+  width: 30px;
+  cursor: pointer;
+}
