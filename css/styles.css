@@ -58,7 +58,10 @@ main {
 }
 
 .choiceImg {
-  height: 40vh;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 40vh;
 }
 
 .choiceImg:hover {
@@ -71,6 +74,22 @@ footer {
 }
 
 #resultText {
-  height: 30px;
   color: var(--text-color);
+}
+
+@media (min-width: 768px) {
+  .choiceImg {
+    max-width: 220px;
+  }
+}
+@media (max-width: 400px) {
+  .results {
+    margin-bottom: 4rem !important;
+    min-height: 80px;
+  }
+
+  #resultText {
+    white-space: normal;
+    height: auto;
+  }
 }
