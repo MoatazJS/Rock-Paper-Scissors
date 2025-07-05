@@ -16,7 +16,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
   </head>
-  <body>
+  <body class="d-flex flex-column">
     <nav
       class="d-flex justify-content-around align-items-center px-4 py-2 navbar"
     >
@@ -42,7 +42,7 @@
         </div>
       </div>
     </nav>
-    <main class="container mt-4">
+    <main class="container mt-4 flex-fill">
       <div class="content">
         <section
           class="score text-uppercase fs-1 fw-bold d-flex justify-content-center align-content-center gap-3"
@@ -57,17 +57,27 @@
           <p></p>
         </section>
         <section class="choices">
-          <img class="rockChoice choiceImg" src="rock.png" alt="Rock" />
-          <img class="paperChoice choiceImg" src="paper.png" alt="Paper" />
           <img
-            class="scissorsChoice choiceImg"
+            class="rockChoice choiceImg border rounded-4"
+            src="rock.png"
+            alt="Rock"
+          />
+          <img
+            class="paperChoice choiceImg border rounded-4"
+            src="paper.png"
+            alt="Paper"
+          />
+          <img
+            class="scissorsChoice choiceImg border rounded-4"
             src="scissors.png"
             alt="Scissors"
           />
         </section>
       </div>
     </main>
-    <footer></footer>
+    <footer class="text-center py-3 mt-4">
+      &copy; 2025 Rock Paper Scissors Game. All rights reserved.
+    </footer>
     <script src="javascript/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"

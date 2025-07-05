@@ -12,6 +12,11 @@ body.dark-mode {
   --hover-color: #61dafb;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .navbar {
   background-color: var(--accent-color);
   color: var(--text-color);
@@ -34,4 +39,17 @@ body.dark-mode {
 .btnStyle:hover {
   background-color: var(--hover-color) !important;
   color: #fff !important;
+}
+
+.choiceImg {
+  height: 40vh;
+}
+
+.choiceImg:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--accent-color);
+  color: var(--text-color);
 }
