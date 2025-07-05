@@ -55,3 +55,8 @@ footer {
   background-color: var(--accent-color);
   color: var(--text-color);
 }
+
+#resultText {
+  height: 30px;
+  color: var(--text-color);
+}
