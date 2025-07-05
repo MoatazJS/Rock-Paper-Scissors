@@ -84,3 +84,12 @@ function startRound(playerChoice) {
   computerScore.textContent = computerScoreCount;
   resultText.textContent = `You chose ${playerChoice}, Computer chose ${computerChoice}. ${result}`;
 }
+
+var toggleBtn = document.querySelector(".toggleBtn");
+function switchTheme() {
+  document.body.classList.toggle("dark-mode");
+}
+
+toggleBtn.addEventListener("click", function () {
+  switchTheme();
+});
