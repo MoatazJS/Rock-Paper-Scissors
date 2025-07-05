@@ -8,7 +8,7 @@ var playerScoreCount = 0;
 var computerScoreCount = 0;
 var resultText = document.querySelector("#resultText");
 var allChoices = document.querySelectorAll(".choiceImg");
-
+var icons = document.querySelectorAll("i");
 /** SOUNDS SECTION */
 function stopAllSounds() {
   rockAudio.pause();
@@ -36,17 +36,14 @@ function playScissorsMusic() {
 }
 allChoices.forEach((img) => {
   img.addEventListener("click", function () {
-    const playerChoice = img.dataset.choice; // "rock", "paper" or "scissors"
+    const playerChoice = img.dataset.choice;
 
-    // stop any playing sound
     stopAllSounds();
 
-    // play the matching sound
     if (playerChoice === "rock") playRockMusic();
     else if (playerChoice === "paper") playPaperMusic();
     else if (playerChoice === "scissors") playScissorsMusic();
 
-    // start the round with the right choice
     startRound(playerChoice);
   });
 });
@@ -88,8 +85,18 @@ function startRound(playerChoice) {
 var toggleBtn = document.querySelector(".toggleBtn");
 function switchTheme() {
   document.body.classList.toggle("dark-mode");
+  const isDark = document.body.classList.contains("dark-mode");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+
+  toggleBtn
+    .querySelectorAll("i")
+    .forEach((icon) => icon.classList.toggle("d-none"));
 }
 
 toggleBtn.addEventListener("click", function () {
   switchTheme();
 });
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-mode");
+  icons.forEach((icon) => icon.classList.toggle("d-none"));
+}
